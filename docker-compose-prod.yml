@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  bedrock-server:
+    image: SET_TO_DOCKER_IMAGE
+    restart: unless-stopped
+    volumes:
+      - ".:/var/www/html"
+    labels:
+      caddy: example.com
+      caddy.reverse_proxy: "{{upstreams 80}}"
+      caddy.reverse_proxy.transport: "http"

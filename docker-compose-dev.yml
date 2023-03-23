@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  bedrock-server:
+    image: SET_TO_DOCKER_IMAGE
+    restart: unless-stopped
+    ports:
+      - 80:80
+    volumes:
+      - ".:/var/www/html"
