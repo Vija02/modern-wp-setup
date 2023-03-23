@@ -1,7 +1,7 @@
-version: '3.3'
+version: '3.5'
 services:
   bedrock-server:
-    image: SET_TO_DOCKER_IMAGE
+    image: ghcr.io/vija02/modern-wp-setup:main
     restart: unless-stopped
     ports:
       - 80:80
