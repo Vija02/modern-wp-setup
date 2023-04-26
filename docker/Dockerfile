@@ -31,8 +31,10 @@ RUN chmod +x /usr/local/bin/install-php-extensions && sync \
     gd \ 
     memcached \
     mysqli \
+    pgsql \
     pcntl \
     pdo_mysql \
+    pdo_pgsql \
     zip \
   && apt-get update \
   && apt-get install -y \
